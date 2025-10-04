@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 export default function Power3Button() {
-    const [value, setValue] = useState(1);
-    const multiply = () => setValue(value * 3);
+    const [value, setValue] = useState(3);
+    const multiplyH3 = () => setValue(value * value * value);
 
     return (
         <button
-            onClick={multiply}
+            onClick={multiplyH3}
             style={{
                 padding: "12px 24px",
                 fontSize: "18px",
