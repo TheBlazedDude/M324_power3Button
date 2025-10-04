@@ -1,0 +1,20 @@
+{
+  "name": "power3button",
+  "version": "1.0.0",
+  "description": "React component that multiplies its value by 3 on each click",
+  "type": "module",
+  "files": ["dist"],
+  "main": "dist/power3button.umd.js",
+  "module": "dist/power3button.es.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "@vitejs/plugin-react": "^5.0.4"
+  }
+}
