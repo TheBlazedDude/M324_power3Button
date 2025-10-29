@@ -1,14 +1,29 @@
 {
-  "name": "power3button",
+  "name": "@theblazeddude/power3button",
   "version": "1.0.0",
   "description": "React component that multiplies its value by 3 on each click",
   "type": "module",
-  "files": ["dist"],
   "main": "dist/power3button.umd.js",
   "module": "dist/power3button.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "prepare": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheBlazedDude/M324_power3Button.git"
+  },
+  "keywords": [
+      "react",
+      "vite",
+      "component",
+      "button",
+      "power3",
+      "multiply"
+  ],
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
@@ -16,5 +31,11 @@
   "devDependencies": {
     "vite": "^7.1.7",
     "@vitejs/plugin-react": "^5.0.4"
+  },
+  "author": "TheBlazedDude",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
+
 }

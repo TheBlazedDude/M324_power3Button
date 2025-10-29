@@ -13,19 +13,19 @@ var $;
 function re() {
   if ($) return _;
   $ = 1;
-  var s = Symbol.for("react.transitional.element"), c = Symbol.for("react.fragment");
-  function l(f, o, u) {
+  var o = Symbol.for("react.transitional.element"), c = Symbol.for("react.fragment");
+  function l(f, s, u) {
     var d = null;
-    if (u !== void 0 && (d = "" + u), o.key !== void 0 && (d = "" + o.key), "key" in o) {
+    if (u !== void 0 && (d = "" + u), s.key !== void 0 && (d = "" + s.key), "key" in s) {
       u = {};
-      for (var m in o)
-        m !== "key" && (u[m] = o[m]);
-    } else u = o;
-    return o = u.ref, {
-      $$typeof: s,
+      for (var m in s)
+        m !== "key" && (u[m] = s[m]);
+    } else u = s;
+    return s = u.ref, {
+      $$typeof: o,
       type: f,
       key: d,
-      ref: o !== void 0 ? o : null,
+      ref: s !== void 0 ? s : null,
       props: u
     };
   }
@@ -44,7 +44,7 @@ var E = {};
 var I;
 function te() {
   return I || (I = 1, process.env.NODE_ENV !== "production" && (function() {
-    function s(e) {
+    function o(e) {
       if (e == null) return null;
       if (typeof e == "function")
         return e.$$typeof === H ? null : e.displayName || e.name || null;
@@ -77,11 +77,11 @@ function te() {
             var r = e.render;
             return e = e.displayName, e || (e = r.displayName || r.name || "", e = e !== "" ? "ForwardRef(" + e + ")" : "ForwardRef"), e;
           case X:
-            return r = e.displayName || null, r !== null ? r : s(e.type) || "Memo";
+            return r = e.displayName || null, r !== null ? r : o(e.type) || "Memo";
           case T:
             r = e._payload, e = e._init;
             try {
-              return s(e(r));
+              return o(e(r));
             } catch {
             }
         }
@@ -112,13 +112,13 @@ function te() {
       if (typeof e == "object" && e !== null && e.$$typeof === T)
         return "<...>";
       try {
-        var r = s(e);
+        var r = o(e);
         return r ? "<" + r + ">" : "<...>";
       } catch {
         return "<...>";
       }
     }
-    function o() {
+    function s() {
       var e = k.A;
       return e === null ? null : e.getOwner();
     }
@@ -145,7 +145,7 @@ function te() {
       });
     }
     function D() {
-      var e = s(this.type);
+      var e = o(this.type);
       return h[e] || (h[e] = !0, console.error(
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
@@ -197,7 +197,7 @@ function te() {
             );
         else P(a);
       if (g.call(r, "key")) {
-        a = s(e);
+        a = o(e);
         var i = Object.keys(r).filter(function(Q) {
           return Q !== "key";
         });
@@ -226,7 +226,7 @@ React keys must be passed directly to JSX without using spread:
         e,
         a,
         t,
-        o(),
+        s(),
         b,
         S
       );
@@ -278,7 +278,7 @@ function ne() {
 }
 var ae = ne();
 function se() {
-  const [s, c] = ee(1), l = () => c(s * 3);
+  const [o, c] = ee(3), l = () => c(o * o * o);
   return /* @__PURE__ */ ae.jsx(
     "button",
     {
@@ -292,7 +292,7 @@ function se() {
         color: "white",
         cursor: "pointer"
       },
-      children: s
+      children: o
     }
   );
 }
