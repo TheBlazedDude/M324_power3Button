@@ -1,7 +1,7 @@
 {
   "name": "@theblazeddude/power3button",
   "version": "1.0.0",
-  "description": "React component that multiplies its value by 3 on each click",
+  "description": "React component that multiplies its value with the Power of 3 on each click",
   "type": "module",
   "main": "dist/power3button.umd.js",
   "module": "dist/power3button.es.js",
